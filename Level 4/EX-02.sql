@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT DISTINCT A.CART_ID FROM CART_PRODUCTS A, CART_PRODUCTS B
+ WHERE A.CART_ID = B.CART_ID AND 
+ ((A.NAME = 'Milk' AND B.NAME = 'Yogurt') OR (B.NAME = 'Milk' AND A.NAME = 'Yogurt')) 
+ ORDER BY cart_id;
